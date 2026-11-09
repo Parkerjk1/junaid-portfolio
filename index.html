@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>MD Junaid — Software Developer · AI &amp; Automation</title>
+  <meta name="description" content="Portfolio of MD Junaid — Computer Science undergraduate, software developer and AI & automation enthusiast based in Bengaluru, India." />
+  <meta name="author" content="MD Junaid" />
+  <meta name="theme-color" content="#050505" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MD Junaid — Software Developer · AI & Automation" />
+  <meta property="og:description" content="Python, automation, AI workflows and machine learning. B.Tech CSE (VTU), CGPA 8.61." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%23050505%27/%3E%3Ctext x=%2732%27 y=%2744%27 font-size=%2734%27 font-family=%27Arial%27 font-weight=%27900%27 text-anchor=%27middle%27 fill=%27%23ff5a1f%27%3EMJ%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__logo">MJ<span class="accent">.</span></div>
+      <div class="preloader__bar-wrap"><div class="preloader__bar" id="preloaderBar"></div></div>
+      <div class="preloader__counter"><span class="preloader__pct" id="preloaderPct">0</span><span class="preloader__pct-sign">%</span></div>
+    </div>
+  </div>
+
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__logo" data-magnetic>MJ<span class="accent">.</span></a>
+    <button class="nav__toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+    <div class="nav__links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/MD_Junaid_Resume.pdf" download class="nav__cta" data-magnetic>Resume</a>
+    </div>
+  </nav>
+
+  <!-- 1 HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__pin">
+      <canvas class="hero__canvas" id="heroCanvas"></canvas>
+      <div class="hero__overlay"></div>
+      <div class="hero__glow" id="heroGlow"></div>
+      <div class="hero__content">
+        <p class="hero__tag">Bengaluru, India &nbsp;/&nbsp; Portfolio 2026</p>
+        <h1 class="hero__heading" aria-label="MD JUNAID">
+          <span class="hero__line" data-split>MD</span>
+          <span class="hero__line" data-split>JUNAID<span class="accent">.</span></span>
+        </h1>
+        <p class="hero__sub">Computer Science Undergraduate &nbsp;|&nbsp; Software Developer &nbsp;|&nbsp; AI &amp; Automation Enthusiast</p>
+        <div class="hero__ctas">
+          <a href="#projects" class="btn btn--solid" data-magnetic><span>View Projects</span> <span class="btn__arrow">&rarr;</span></a>
+          <a href="assets/MD_Junaid_Resume.pdf" download class="btn" data-magnetic><span>Download Résumé</span> <span class="btn__arrow">&darr;</span></a>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator"><span>Scroll</span><div class="hero__scroll-line"></div></div>
+    </div>
+  </section>
+
+  <!-- Canvas transition (frames_2) -->
+  <section class="video-transition" aria-label="Interlude">
+    <div class="video-transition__inner">
+      <div class="video-transition__frame"><canvas id="vtCanvas" class="video-transition__canvas"></canvas></div>
+      <div class="video-transition__overlay"></div>
+      <div class="video-transition__text">
+        <span class="vt-word">Python</span><span class="vt-dot"></span>
+        <span class="vt-word">Automation</span><span class="vt-dot"></span>
+        <span class="vt-word">AI</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 ABOUT -->
+  <section class="intro" id="about">
+    <div class="intro__video-wrap">
+      <video class="intro__video" muted playsinline loop preload="none">
+        <source src="https://videos.pexels.com/video-files/7547023/7547023-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+      </video>
+      <div class="intro__overlay"></div>
+    </div>
+    <div class="intro__content">
+      <div class="section-label"><span class="label-line"></span><span>01 — About</span></div>
+      <h2 class="intro__heading">
+        I turn real business problems into<br />
+        working <em>software</em>, automation<br />
+        and intelligent workflows.
+      </h2>
+      <div class="intro__cols">
+        <div class="intro__col reveal-up">
+          <p>I'm a Computer Science undergraduate (B.Tech, 2027) with internship experience building Python-based automation and LLM-powered workflows for lead management, client communication and internal business processes.</p>
+        </div>
+        <div class="intro__col reveal-up">
+          <p>I have a strong foundation in Java, SQL, data structures, OOP and DBMS, plus end-to-end projects including an NLP classifier achieving 95% accuracy on 45K+ articles. I translate business requirements into working software.</p>
+        </div>
+      </div>
+      <div class="intro__stats">
+        <div class="stat reveal-up"><div class="stat__inner"><span class="stat__number"><span class="count" data-to="8.61" data-dec="2">0</span></span><span class="stat__label">CGPA / 10 · VTU</span></div></div>
+        <div class="stat reveal-up"><div class="stat__inner"><span class="stat__number"><span class="count" data-to="45">0</span><span class="stat__plus">K+</span></span><span class="stat__label">Articles classified</span></div></div>
+        <div class="stat reveal-up"><div class="stat__inner"><span class="stat__number"><span class="count" data-to="95">0</span><span class="stat__plus">%</span></span><span class="stat__label">Fake-news accuracy</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 SKILLS -->
+  <section class="services skills" id="skills">
+    <div class="services__bg">
+      <video class="services__video" muted playsinline loop preload="none">
+        <source src="https://videos.pexels.com/video-files/32336468/13794791_1920_1080_30fps.mp4" type="video/mp4" />
+      </video>
+      <div class="services__video-overlay"></div>
+    </div>
+    <div class="services__inner">
+      <div class="services__left">
+        <div class="services__sticky">
+          <div class="section-label"><span class="label-line"></span><span>02 — Skills</span></div>
+          <span class="services__number">01</span>
+          <h2 class="services__title">Technology Stack</h2>
+          <p class="services__desc">Hover or scroll through the groups — the orbit reacts.</p>
+          <div class="orb" id="orb" aria-hidden="true"><canvas id="orbCanvas"></canvas></div>
+        </div>
+      </div>
+      <div class="services__right">
+        <div class="service-item" data-index="01">
+          <span class="service-item__index">01</span>
+          <div class="service-item__content"><h3>Programming Languages</h3>
+            <div class="chips"><span>Python</span><span>Java</span><span>C</span><span>SQL</span></div></div>
+        </div>
+        <div class="service-item" data-index="02">
+          <span class="service-item__index">02</span>
+          <div class="service-item__content"><h3>Automation &amp; AI Workflows</h3>
+            <div class="chips"><span>Python scripting</span><span>Business process automation</span><span>AI / LLM-powered workflows</span></div></div>
+        </div>
+        <div class="service-item" data-index="03">
+          <span class="service-item__index">03</span>
+          <div class="service-item__content"><h3>Engineering Fundamentals</h3>
+            <div class="chips"><span>DSA</span><span>OOP</span><span>DBMS</span><span>Operating Systems</span><span>Computer Networks</span></div></div>
+        </div>
+        <div class="service-item" data-index="04">
+          <span class="service-item__index">04</span>
+          <div class="service-item__content"><h3>Data &amp; Machine Learning</h3>
+            <div class="chips"><span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>TensorFlow</span><span>Keras</span><span>Pandas</span><span>Scikit-learn</span></div></div>
+        </div>
+        <div class="service-item" data-index="05">
+          <span class="service-item__index">05</span>
+          <div class="service-item__content"><h3>Development Tools</h3>
+            <div class="chips"><span>Git</span><span>GitHub</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="projects__head">
+      <div class="section-label"><span class="label-line"></span><span>03 — Selected Projects</span></div>
+      <h2 class="big-heading" data-split>Two end-to-end ML pipelines.</h2>
+    </div>
+
+    <article class="case" id="case-fake">
+      <div class="case__meta">
+        <span class="case__no">01</span>
+        <h3 class="case__title" data-split>Fake News Detection</h3>
+        <div class="chips"><span>Python</span><span>Scikit-learn</span><span>NLP</span><span>TF-IDF</span></div>
+        <p>An end-to-end NLP text-classification pipeline covering preprocessing, TF-IDF feature extraction, model training and classification on 45K+ news articles.</p>
+        <ul class="case__facts">
+          <li><b>45K+</b><span>news articles</span></li>
+          <li><b>95%</b><span>accuracy</span></li>
+          <li><b>PAC</b><span>PassiveAggressiveClassifier</span></li>
+        </ul>
+      </div>
+      <div class="flow" data-flow>
+        <div class="flow__label">Pipeline — illustrative visualisation, not a live model</div>
+        <div class="flow__track">
+          <div class="node"><i>01</i><b>Input</b><small>News article text</small></div>
+          <div class="node"><i>02</i><b>Preprocessing</b><small>Clean &amp; normalise</small></div>
+          <div class="node"><i>03</i><b>TF-IDF</b><small>Feature extraction</small></div>
+          <div class="node"><i>04</i><b>Classification</b><small>PassiveAggressive</small></div>
+          <div class="node node--out"><i>05</i><b>Prediction</b><small>Real / Fake</small></div>
+          <div class="flow__line"><span class="flow__pulse"></span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="case case--alt" id="case-car">
+      <div class="case__meta">
+        <span class="case__no">02</span>
+        <h3 class="case__title" data-split>Used Car Price Prediction</h3>
+        <div class="chips"><span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Random Forest</span></div>
+        <p>An end-to-end regression pipeline to predict used-car prices, including data preprocessing and feature preparation. A Random Forest model was trained and evaluated to generate price predictions.</p>
+        <ul class="case__facts">
+          <li><b>Pandas</b><span>data preprocessing</span></li>
+          <li><b>RF</b><span>Random Forest regression</span></li>
+          <li><b>₹</b><span>price prediction</span></li>
+        </ul>
+      </div>
+      <div class="flow" data-flow>
+        <div class="flow__label">Pipeline — illustrative visualisation, not a live model</div>
+        <div class="flow__track">
+          <div class="node"><i>01</i><b>Input</b><small>Car attributes</small></div>
+          <div class="node"><i>02</i><b>Preprocessing</b><small>Clean with Pandas</small></div>
+          <div class="node"><i>03</i><b>Features</b><small>Feature preparation</small></div>
+          <div class="node"><i>04</i><b>Random Forest</b><small>Regression</small></div>
+          <div class="node node--out"><i>05</i><b>Prediction</b><small>Estimated price</small></div>
+          <div class="flow__line"><span class="flow__pulse"></span></div>
+        </div>
+      </div>
+    </article>
+    <div class="projects__more"><a href="https://github.com/Parkerjk1" target="_blank" rel="noopener" class="btn" data-magnetic><span>More on GitHub</span> <span class="btn__arrow">&nearr;</span></a></div>
+  </section>
+
+  <!-- Cinematic pinned break -->
+  <section class="cinematic" id="break" aria-label="Interlude">
+    <div class="cinematic__sticky">
+      <div class="cinematic__video-frame">
+        <video class="cinematic__video" muted playsinline loop preload="none">
+          <source src="https://videos.pexels.com/video-files/36619504/15525739_2560_1440_30fps.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="cinematic__overlay"></div>
+      <div class="cinematic__content">
+        <h2 class="cinematic__heading"><span class="cin-line">Build.</span><span class="cin-line">Automate.</span></h2>
+      </div>
+      <div class="cinematic__counter"><span class="cinematic__count">00</span><span class="cinematic__count-label">% revealed</span></div>
+    </div>
+  </section>
+
+  <!-- 5 EXPERIENCE -->
+  <section class="experience" id="experience">
+    <div class="wrap">
+      <div class="section-label"><span class="label-line"></span><span>04 — Experience</span></div>
+      <h2 class="big-heading" data-split>Internship timeline.</h2>
+      <div class="timeline" id="timeline">
+        <div class="timeline__rail"><span class="timeline__fill" id="timelineFill"></span></div>
+        <div class="tl-item">
+          <span class="tl-dot"></span>
+          <div class="tl-date">Jul 2026 — Aug 2026</div>
+          <h3>AI &amp; Business Automation Intern</h3>
+          <div class="tl-org">Silicon Valley Touch Global · Bengaluru, India</div>
+          <ul>
+            <li>Developed Python-based automation solutions supporting lead management, client communication and internal business workflows.</li>
+            <li>Built AI/LLM-powered automation workflows to streamline repetitive manual processes and improve operational efficiency.</li>
+            <li>Translated real-world business requirements into working automation solutions, applying software development and problem-solving practices throughout implementation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 EDUCATION -->
+  <section class="education" id="education">
+    <div class="wrap">
+      <div class="section-label"><span class="label-line"></span><span>05 — Education</span></div>
+      <div class="edu">
+        <div class="edu__ring" aria-hidden="true">
+          <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" class="ring-bg"/><circle cx="60" cy="60" r="52" class="ring-fg" id="ringFg"/></svg>
+          <div class="edu__ring-num"><span class="count" data-to="8.61" data-dec="2">0</span><small>/ 10</small></div>
+        </div>
+        <div class="edu__text">
+          <div class="tl-date">2023 — 2027 (Expected)</div>
+          <h3>B.Tech in Computer Science and Engineering</h3>
+          <div class="tl-org">Visvesvaraya Technological University (VTU) · CGPA 8.61 / 10</div>
+          <div class="chips"><span>Data Structures &amp; Algorithms</span><span>OOP</span><span>DBMS</span><span>Operating Systems</span><span>Computer Networks</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7/8 CONTACT + RESUME -->
+  <section class="contact" id="contact">
+    <div class="contact__content">
+      <div class="section-label"><span class="label-line"></span><span>06 — Contact</span></div>
+      <h2 class="contact__heading" data-split>Let's build<br />something.</h2>
+      <a href="mailto:junaidkhan73991@gmail.com" class="contact__email reveal-up">junaidkhan73991@gmail.com</a>
+      <div class="contact__grid">
+        <a class="c-card reveal-up" href="https://github.com/Parkerjk1" target="_blank" rel="noopener" data-magnetic><small>GitHub</small><b>github.com/Parkerjk1</b></a>
+        <a class="c-card reveal-up" href="https://linkedin.com/in/junaid-khan25" target="_blank" rel="noopener" data-magnetic><small>LinkedIn</small><b>linkedin.com/in/junaid-khan25</b></a>
+        <a class="c-card reveal-up" href="tel:+917518960353" data-magnetic><small>Phone</small><b>+91 75189 60353</b></a>
+        <a class="c-card c-card--resume reveal-up" href="assets/MD_Junaid_Resume.pdf" download data-magnetic><small>Résumé · PDF</small><b>Download résumé &darr;</b></a>
+      </div>
+      <div class="contact__footer">
+        <div class="contact__copy">&copy; 2026 MD Junaid · Bengaluru, India</div>
+        <div class="contact__socials">
+          <a href="https://github.com/RelaxKartikey/prior-gsap-animation-portfolio-website-template" target="_blank" rel="noopener">Built on PRIOR template by RelaxKartikey (Entospark Studios)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
