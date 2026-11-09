@@ -1,51 +1,104 @@
-# MD Junaid — Portfolio
+# MD Junaid — Personal Portfolio
 
-Cinematic, animation-heavy software-engineering portfolio for **MD Junaid** (Computer Science undergraduate · Software Developer · AI & Automation enthusiast), Bengaluru, India.
+A high-performance, interactive portfolio showcasing my work in software development, Python automation, artificial intelligence and machine learning.
 
-Built by modifying the open-source **PRIOR** GSAP template by [RelaxKartikey](https://github.com/RelaxKartikey) (Entospark Studios). The original canvas frame-scrub hero, canvas clip-path transition, pinned cinematic section, preloader and sticky list were kept and extended. Original attribution is preserved here and in the site footer.
+Designed around scroll-driven interactions, real-time visual rendering and carefully optimised animations, the portfolio combines modern frontend engineering with immersive visual storytelling.
 
-## Run it
+## Tech Stack
 
-No build step, no `npm install`. The site must be served over HTTP (so the frame images and PDF load reliably) and needs an internet connection for the CDN libraries and Google Fonts.
+- **HTML5 & CSS3** — Semantic structure, responsive layouts and custom styling
+- **Vanilla JavaScript** — Interactive functionality and animation orchestration
+- **GSAP & ScrollTrigger** — Scroll-linked animations and timeline control
+- **Lenis** — Smooth scrolling synchronised with the GSAP animation ticker
+- **Canvas API** — Frame-by-frame animation rendering and scroll-controlled transitions
+- **Three.js** — Interactive 3D skills visualisation
+- **Google Fonts** — Typography
+
+## Features & Implementation
+
+| Section | Implementation |
+|---|---|
+| Hero | Canvas-based frame scrubbing, character reveals, pointer-follow effects and preloader |
+| Cinematic Transitions | Scroll-controlled canvas sequences, pinned sections and clip-path animations |
+| About | Animated typography and dynamic statistics |
+| Skills | Interactive grouped skills list and lazy-loaded Three.js visualisation |
+| Projects | Detailed case studies with animated workflow visualisations |
+| Experience | Animated professional experience timeline |
+| Education | Academic background and animated CGPA indicator |
+| Contact | Direct contact links and downloadable résumé |
+
+## Performance & Accessibility
+
+- Frame sequences loaded progressively using a sliding-window strategy.
+- Decoded image resources evicted when no longer required.
+- Reduced-resolution assets used on mobile devices.
+- Three.js initialised lazily on supported desktop devices.
+- Background videos conditionally disabled on mobile, low-end devices and reduced-motion configurations.
+- `prefers-reduced-motion` support for accessible browsing.
+- Animation loops, event listeners and rendering resources cleaned up on page lifecycle changes.
+- Lenis synchronised with the GSAP ticker to maintain consistent scroll behaviour.
+
+## Machine Learning Projects
+
+**Fake News Detection**
+- NLP-based text classification.
+- TF-IDF feature extraction.
+- PassiveAggressiveClassifier.
+- Dataset containing 45K+ news articles.
+- 95% reported model accuracy.
+
+**Used Car Price Prediction**
+- Data preprocessing and feature engineering.
+- Regression-based price prediction.
+- Random Forest implementation using Scikit-learn.
+
+## Experience
+
+**AI & Business Automation Intern**  
+Silicon Valley Touch Global | July–August 2026
+
+Worked on Python-based automation solutions, AI/LLM workflows, lead management and internal business process optimisation.
+
+## Education
+
+**B.Tech — Computer Science and Engineering**  
+HKBK College of Engineering, Bengaluru  
+Visvesvaraya Technological University  
+2023–2027 | CGPA: 8.61/10
+
+## Getting Started
+
+The project uses static HTML, CSS and JavaScript and does not require a build process.
 
 ```bash
 cd Junaid-Portfolio
 npx serve .
-# or: python3 -m http.server 8000   then open http://localhost:8000
 ```
 
-Deploy by uploading the folder to any static host (GitHub Pages, Netlify, Vercel).
+Alternatively:
 
-## What's inside
+```bash
+python -m http.server 8000
+```
 
-| Section | Implementation |
-|---|---|
-| Hero — MD JUNAID | Canvas frame-scrub (`frames_1_*`), per-character reveal, pointer-follow glow, preloader, scroll indicator |
-| Interlude | Canvas frame-scrub (`frames_2_*`) with clip-path expansion, pinned |
-| About | Staggered heading reveal, count-up stats (CGPA 8.61, 45K+, 95%) |
-| Skills | Sticky grouped list + lazy-loaded Three.js orbit orb that reacts to the active group |
-| Projects | Two case studies with scroll-driven, **illustrative** pipelines (not live model execution) |
-| Interlude | Pinned clip-path video reveal with % counter |
-| Experience | Animated timeline with scroll-filled rail |
-| Education | VTU B.Tech CSE, 2023–2027, animated CGPA ring |
-| Contact + Résumé | Email, GitHub, LinkedIn, phone, working PDF download (`assets/MD_Junaid_Resume.pdf`) |
+Open `http://localhost:8000` in your browser.
 
-Engine: GSAP 3.12.5 + ScrollTrigger, Lenis 1.1.13 (one instance synced to `gsap.ticker`), Three.js r128 (loaded only when Skills is near, desktop only). All per-frame work (Lenis, canvas painting, cursor, velocity skew, 3D orb) runs in a single GSAP ticker callback.
+An internet connection is required for externally hosted libraries, fonts and video assets.
 
-## Performance notes
+## Project Configuration
 
-- Frame sequences load in a sliding window and evict decoded bitmaps outside it; mobile uses the 1280px frames.
-- Background videos (external Pexels clips from the original template) are skipped on mobile, low-end devices, Save-Data and reduced-motion, and only play near the viewport.
-- `prefers-reduced-motion`: no Lenis, no 3D, no cursor/grain animation; content shows in its final state.
-- Listeners, ScrollTriggers, Lenis and Three.js resources are disposed on `pagehide`.
+- `index.html` — Page structure and content
+- `styles.css` — Styling, layouts and visual system
+- `main.js` — Animation logic and interactive behaviour
+- `assets/` — Images, résumé and other resources
+- `frames_*` — Animation frame sequences
 
-## Editing
+## Deployment
 
-- Text: `index.html` · Styles/colours (`--accent`): `styles.css` · Motion: `main.js`
-- Replace the résumé by overwriting `assets/MD_Junaid_Resume.pdf`.
-- To use your own frame sequences, replace the JPGs in `frames_*_desktop` / `frames_*_mobile` (same file naming) and adjust `HERO_FRAMES` / `VT_FRAMES` in `main.js`.
-- The frame images are tinted orange at runtime with a CSS `hue-rotate` filter.
+Compatible with static hosting platforms such as GitHub Pages, Netlify and Vercel.
 
-## Credits & licence
+## License
 
-Template: PRIOR by RelaxKartikey / Entospark Studios (open source). Background clips: Pexels. Libraries: GSAP, Lenis, Three.js (each under its own licence). Personal content © MD Junaid.
+Third-party libraries, assets and inherited source components remain subject to their respective licences and applicable permissions.
+
+Personal content and original contributions © MD Junaid.
